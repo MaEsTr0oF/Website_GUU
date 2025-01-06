@@ -3,21 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название страницы</title>
     <link rel="stylesheet" href="style.css">
+    <title>Название страницы</title>
+    <!-- ПОдключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- вся шапка сайта -->
     <header>
-        <h1>Добро пожаловать!</h1>
+      <div class="header_logo"><img src="./img/logo.png" alt=""></div>
+       <div class="header__title">Столовая ГУУ</div>
+       <div class="header__menu">
+          <div class="menu_category" style="color: rgb(237, 89, 89);" >Главная</div>
+          <div class="menu_category"><a href="menu.htm">Меню</a></div>
+          <div class="menu_category">Контакты</div>
+          <div class="menu_category">Отзывы</div>
+      </div>
     </header>
     <main>
-        <section>
-            <h2>Основной контент</h2>
-            <p>Это пример стартового шаблона HTML-документа.</p>
+        <section class="first">
+            <div class="first_title">
+              <h2>Добро пожаловать в нашу столовую!</h2>
+            </div>
+            <div class="first_subtext">Мы предлагаем вкусные и разнообразные блюда по доступным ценам.</div>
+        </section>
+        <section class="second">
+          <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="./img/акции/2.png" alt="Слайд 1">
+                </div>
+                <div class="slide">
+                    <img src="./img/акции/1.png" alt="Слайд 2">
+                </div>
+                <div class="slide">
+                    <img src="./img/акции/3.png" alt="Слайд 3">
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+          </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Ваше имя</p>
+        <div class="footer_title">©2024 Столовая ГУУ</div>
     </footer>
     <script src="script.js"></script> 
 </body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Название страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_logo"><img src="./img/logo.png" alt=""></div>
+        <div class="header__title">Столовая ГУУ</div>
+        <div class="header__menu">
+            <div class="menu_category"><a href="index.htm">Главная</a></div>
+            <div class="menu_category" style="color: rgb(237, 89, 89);">Меню</div>
+            <div class="menu_category">Контакты</div>
+            <div class="menu_category">Отзывы</div>
+        </div>
+    </header>
+    <section class="menu_first">
+        <div class="menu_first_title">
+            <h2>Наше меню</h2>
+        </div>
+        <div class="menu_first_types">
+            <div class="menu_type" onclick="showCategory('salads')">Салаты</div>
+            <div class="menu_type" onclick="showCategory('soups')">Супы</div>
+            <div class="menu_type" onclick="showCategory('main_dishes')">Горячие блюда</div>
+            <div class="menu_type" onclick="showCategory('bakery')">Выпечка</div>
+            <div class="menu_type" onclick="showCategory('drinks')">Напитки</div>
+        </div>
+    </section>
+    <section class="menu_second">
+        <div class="menu_second_title">
+            
+        </div>
+        <div class="menu_second_main" id="menu-content">
+            <!-- Сюда будет загружаться контент -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer_title">©2024 Столовая ГУУ</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

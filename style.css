@@ -1,0 +1,229 @@
+/* Обнуляющий стиль */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 отображение блока для элементов */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+  font-family: "Comfortaa", serif; 
+  font-optical-sizing: auto; 
+  font-weight: 300; 
+  font-style: normal;
+    line-height: 1;
+    background-color: aliceblue;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+header{
+  position: relative;
+  font-family: "Inter", serif; 
+  font-optical-sizing: auto; 
+  font-weight: 400; 
+  font-style: normal; 
+  background-color: #656161;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  gap:20px;
+  align-items: center;
+}
+.header__title{
+  font-size: 30px;
+}
+.header__menu{
+
+  display: flex;
+  gap:20px;
+  font-size: 20px;
+}
+.header_logo{
+  position: absolute;
+  left:20px;
+}
+.header_logo img{
+  object-fit: contain;
+  width: 90px;
+  
+}
+.first{
+  margin:20px 0;
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.first_title{
+  font-size: 25px;
+}
+.first_subtext{
+  font-size: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(240, 248, 255);
+}
+
+.slide img {
+  object-fit: cover;
+  width: 800px;
+  border-radius: 10px;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+footer{
+  font-family: "Inter", serif; 
+  font-optical-sizing: auto; 
+  font-weight: 400; 
+  font-style: normal; 
+  color:white;
+  background-color: #656161;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+  color: rgb(183, 218, 248);
+  text-decoration: underline;
+}
+.menu_first{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.menu_first_title{
+  font-size: 28px;
+}
+.menu_first_types{
+  display: flex;
+  gap:15px;
+}
+.menu_second{
+  margin: 80px 40px;
+}
+.menu_second_title{
+  font-size: 20px;
+ text-align: center;
+ font-weight: 700; 
+}
+.main_content{
+  position: relative;
+  width: 30%;
+}
+.main_content img{
+  object-fit: cover;
+  width: 412px;
+  height: 300px;
+  display: block;
+}
+.hover-text{
+  position: absolute;
+  bottom: 11%;
+  
+  background-color: rgba(0, 0, 0, 0.7);
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+.main_content:hover .hover-text{
+  display: block;
+}
+.main_content_subtext{
+  background-color: rgb(193, 218, 239);
+  text-align: center;
+  padding: 10px;
+}
+.menu_second_main{
+  margin: 30px auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+}
