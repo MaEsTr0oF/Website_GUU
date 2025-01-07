@@ -27,6 +27,9 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   font-family: "Comfortaa", serif; 
   font-optical-sizing: auto; 
   font-weight: 300; 
@@ -94,7 +97,7 @@ header{
   gap: 20px;
 }
 .first_title{
-  font-size: 25px;
+  font-size: 30px;
 }
 .first_subtext{
   font-size: 20px;
@@ -155,7 +158,7 @@ footer{
   font-style: normal; 
   color:white;
   background-color: #656161;
-  height: 83px;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +180,7 @@ a:hover{
   align-items: center;
 }
 .menu_first_title{
-  font-size: 28px;
+  font-size: 30px;
 }
 .menu_first_types{
   display: flex;
@@ -210,6 +213,7 @@ a:hover{
   padding: 10px;
   border-radius: 5px;
   display: none;
+  width: 95%;
 }
 .main_content:hover .hover-text{
   display: block;
@@ -226,4 +230,40 @@ a:hover{
   justify-content: center;
   
   flex-wrap: wrap;
+}
+main{
+  flex: 1;
+}
+.menu_type:hover{
+  text-decoration: underline;
+  color: #656161;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact_first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first_contact{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.contact_title{
+  margin: 20px;
+  font-size: 30px;
+}
+.worktime_first{
+  font-size: 20px;
+}
+.worktime_first h2{
+  color:#656161;
+}
+.subtime{
+  line-height: 200%;
+  padding: 20px 0;
+}
+.worktime_first{
+  margin-right: 270px;
 }

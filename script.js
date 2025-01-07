@@ -40,7 +40,7 @@ const menuData = {
     text: 'Состав: свекла, картофель, морковь, огурец соленый, горошек зеленый консервированный, лук репчатый',      subtext: 'Винегрет - 100гр/80р',
   },    {
     img: './img/dishes/salat4.svg',      text: 'Состав: огурцы, помидоры, лук красный, масло оливковое',
-    subtext: 'Салат из свежих овощей с оливковым маслом - 150гр/100р',    }
+    subtext: 'Салат из свежих овощей - 150гр/100р',    }
 ],  soups: [
   {      img: './img/dishes/soup.png',
     text: 'Состав: куриный бульон, мясо курицы, вермишель, лук, морковь, картофель, петрушка',      subtext: 'Суп Вермишелевый - 250гр/120р',
@@ -65,10 +65,10 @@ const menuData = {
     text: 'Состав: паста, филе куриное, сливки, сыр, грибы шампиньоны',      subtext: 'Паста с курицей и грибами - 220гр/180р',
   },{
     img: './img/dishes/fish.png',      text: 'Состав: треска, лимон, прованские травы',
-    subtext: 'Рыба запеченная с лимоном и специями - 150гр/120р',    },{
+    subtext: 'Рыба запеченная  - 150гр/120р',    },{
       img: './img/dishes/with_pure.png',      text: 'Состав: шницель свиной, картофель, лук зеленый, петрушка',
-      subtext: 'Шницель из свинины с картофелем - 300гр/200р',    },{      img: './img/dishes/pizza.png',
-      text: '',      subtext: 'Пицца в ассортименте - 100гр/100р',
+      subtext: 'Шницель с картофелем - 300гр/200р',    },{      img: './img/dishes/pizza.png',
+      text: 'Состав: тесто, соус, сыр, колбаса)',      subtext: 'Пицца в ассортименте - 100гр/100р',
     } 
   ],
   bakery: [
@@ -120,7 +120,8 @@ function showCategory(category) {
     const itemDiv = document.createElement('div');        
     itemDiv.className = 'main_content';
     const img = document.createElement('img');
-    img.src = item.img;        itemDiv.appendChild(img);
+    img.src = item.img;        
+    itemDiv.appendChild(img);
     const hoverText = document.createElement('div');
     hoverText.className = 'hover-text';        
     hoverText.textContent = item.text;
