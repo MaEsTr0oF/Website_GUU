@@ -25,15 +25,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
+@font-face {
+  font-family: 'MyFont'; /* Имя шрифта, которое вы будете использовать */
+  src: url('fonts/pt-astra-serif_regular.ttf') format('truetype'); /* Укажите путь к файлу шрифта */
+}
+@font-face {
+  font-family: 'MyFont2'; /* Имя шрифта, которое вы будете использовать */
+  src: url('fonts/golos-text_medium.ttf') format('truetype'); /* Укажите путь к файлу шрифта */
+}
+   /* Используйте шрифт в стилях */
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: "Comfortaa", serif; 
-  font-optical-sizing: auto; 
-  font-weight: 300; 
-  font-style: normal;
+  font-family: "MyFont2", serif; 
     line-height: 1;
     background-color: aliceblue;
 }
@@ -58,11 +63,9 @@ table {
 }
 header{
   position: relative;
-  font-family: "Inter", serif; 
-  font-optical-sizing: auto; 
-  font-weight: 400; 
+  font-family: 'MyFont', sans-serif;
   font-style: normal; 
-  background-color: #656161;
+  background-color: #878383;
   color: white;
   display: flex;
   flex-direction: column;
@@ -85,7 +88,7 @@ header{
 }
 .header_logo img{
   object-fit: contain;
-  width: 90px;
+  width: 300px;
   
 }
 .first{
@@ -152,12 +155,9 @@ button:hover {
 }
 
 footer{
-  font-family: "Inter", serif; 
-  font-optical-sizing: auto; 
-  font-weight: 400; 
-  font-style: normal; 
+  font-family: 'MyFont', sans-serif;
   color:white;
-  background-color: #656161;
+  background-color: #878383;
   padding: 30px 0;
   display: flex;
   align-items: center;
