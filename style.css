@@ -221,7 +221,7 @@ a:hover{
 .main_content_subtext{
   background-color: rgb(193, 218, 239);
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 .menu_second_main{
   margin: 30px auto;
